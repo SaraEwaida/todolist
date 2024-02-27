@@ -1,0 +1,80 @@
+body {
+    font-family: serif;
+    text-align: center;
+    margin-top: 50px;
+}
+.todo-container {
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+h1 {
+    margin-bottom: 20px;
+}
+input[type="text"] {
+    padding: 20px;
+    width: 300px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+button:hover {
+    background-color:white;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+    text-align: left;
+}
+li {
+    background-color: red; 
+    border: 1px white; 
+    padding: 10px;
+    border-radius: 5px; 
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.1); 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+li span {
+    flex-grow: 1; 
+}
+li span.done {
+    text-decoration: silver;
+    color: white; 
+}
+
+.task-checkbox {
+    margin-right: 10px;
+}
+
+.task-label {
+    flex-grow: 1;
+    margin-left: 8px;
+}
+
+
+button.delete {
+    padding: 5px 10px;
+    margin-left: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button.delete:hover {
+    color: #555;
+}
